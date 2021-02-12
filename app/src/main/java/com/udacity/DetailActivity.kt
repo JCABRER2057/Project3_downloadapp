@@ -1,5 +1,6 @@
 package com.udacity
 
+import android.app.NotificationManager
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -22,9 +23,10 @@ class DetailActivity : AppCompatActivity() {
 
         if (statusExtra == "FAIL") {
             status.setTextColor(Color.RED)
-        } else if (statusExtra == "SUCCESS") {
-            status.setTextColor(Color.GREEN)
         }
+
+        val notificationManager = getSystemService(NotificationManager::class.java)
+        notificationManager.cancelAll()
     }
 
     fun goBack(view: View) {

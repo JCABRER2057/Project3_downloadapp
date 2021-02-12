@@ -57,8 +57,6 @@ fun NotificationManager.sendNotification(
         PendingIntent.FLAG_UPDATE_CURRENT
     )
 
-
-
     // TODO: Step 1.2 get an instance of NotificationCompat.Builder
     val builder = NotificationCompat.Builder(applicationContext, channelId)
     // TODO: Step 1.3 set title, text and icon to builder

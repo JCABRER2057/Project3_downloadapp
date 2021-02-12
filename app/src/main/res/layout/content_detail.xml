@@ -48,9 +48,8 @@
         android:id="@+id/status"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/default_text_size"
-        android:background="#8d9692"
         android:padding="8dp"
         app:layout_constraintStart_toStartOf="@id/filename"
         app:layout_constraintTop_toTopOf="@id/status_label" />

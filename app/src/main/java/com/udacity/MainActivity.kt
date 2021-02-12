@@ -75,10 +75,10 @@ class MainActivity : AppCompatActivity() {
 
             when (downloadStatus) {
                 DownloadManager.STATUS_SUCCESSFUL -> {
-                    status = "SUCCESS"
+                    status = "Success"
                 }
                 DownloadManager.STATUS_FAILED -> {
-                    status = "FAIL"
+                    status = "Fail"
                 }
             }
 
